@@ -151,3 +151,4 @@ app.listen(PORT, () => {
   console.log(`\nInstagram Downloader berjalan di: http://localhost:${PORT}`);
   console.log("Tekan Ctrl+C untuk menghentikan server.\n");
 });
+module.exports = app;
