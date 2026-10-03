@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Instagram video downloader modern.">
+  <title>InstaSave — Instagram Downloader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <header class="navbar">
+    <a class="brand" href="/">
+      <span class="brand-icon">↓</span>
+      <span>Insta<span>Save</span></span>
+    </a>
+
+    <div class="nav-badge">
+      <span class="status-dot"></span>
+      Online
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-badge">⚡ FAST & SIMPLE DOWNLOADER</div>
+
+      <h1>Download Video Instagram<br><span>Dengan Mudah.</span></h1>
+
+      <p class="hero-text">
+        Tempel URL Instagram kamu, proses videonya, lalu simpan ke perangkat.
+        Tampilan simpel, cepat, dan nyaman digunakan.
+      </p>
+
+      <div class="download-card">
+        <div class="input-wrapper">
+          <span class="link-icon">🔗</span>
+          <input
+            id="urlInput"
+            type="url"
+            placeholder="https://www.instagram.com/reel/..."
+            autocomplete="off"
+          >
+          <button id="clearBtn" class="clear-btn" title="Hapus URL" aria-label="Hapus URL">×</button>
+        </div>
+
+        <button id="processBtn" class="process-btn">
+          <span class="btn-text">Proses Video</span>
+          <span class="spinner hidden"></span>
+        </button>
+
+        <div class="supported">
+          <span>✓</span> Mendukung Instagram Reels, Post & Video publik
+        </div>
+      </div>
+
+      <div id="message" class="message hidden"></div>
+    </section>
+
+    <section id="resultSection" class="result-section hidden">
+      <div class="section-heading">
+        <div>
+          <span class="small-label">HASIL</span>
+          <h2>Video ditemukan</h2>
+        </div>
+        <span id="resultStatus" class="result-status">READY</span>
+      </div>
+
+      <div class="result-card">
+        <div class="thumbnail-wrap">
+          <img id="thumbnail" src="" alt="Thumbnail video Instagram">
+          <div id="duration" class="duration">00:00</div>
+          <div class="play-overlay">▶</div>
+        </div>
+
+        <div class="result-info">
+          <p class="result-label">INSTAGRAM VIDEO</p>
+          <h3 id="videoTitle">Instagram Video</h3>
+          <p id="uploader" class="uploader"></p>
+
+          <div class="result-actions">
+            <button id="downloadBtn" class="download-btn">
+              <span>↓</span>
+              Download MP4
+            </button>
+            <button id="newBtn" class="secondary-btn">Video Lain</button>
+          </div>
+
+          <p class="notice">
+            Gunakan downloader ini hanya untuk konten yang boleh kamu simpan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <div>
+          <h3>Cepat</h3>
+          <p>Proses URL dengan cepat melalui server.</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">🎬</div>
+        <div>
+          <h3>Kualitas Terbaik</h3>
+          <p>Mencoba mengambil format video terbaik yang tersedia.</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">📱</div>
+        <div>
+          <h3>Responsive</h3>
+          <p>Nyaman digunakan di HP maupun laptop.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 InstaSave · Dibuat untuk penggunaan yang bertanggung jawab.</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
